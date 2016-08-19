@@ -1,5 +1,30 @@
 # coding=utf-8
 
+# tax equation, found on:
+# https://www.bmf-steuerrechner.de
+# (visited on 19. August 2016)
+def calculate_taxes(income):
+	# outputs tupple like this: (taxes to pay, real income)
+	tax_A = 8652.0
+	tax_B = 13669.0
+	tax_C = 53665.0
+	tax_D = 254446.0
+	if income <= tax_A:
+		TAXES = 0.0
+	elif income > tax_A and income <= tax_B:
+		TAXES = (993.62 * (income - tax_A) / 10000.0 + 1400.0) * (income - tax_A) / 10000.0
+	elif income > tax_B and income <= tax_C:
+		TAXES = (225.4 * (income - tax_B) / 10000.0 + 2397.0) * (income - tax_B) / 10000.0 + 952.48
+	elif income > tax_C and income <= tax_D:
+		TAXES = 0.42 * income - 8394.14
+	elif income > tax_D:
+		TAXES = 0.45 * income - 16027.52
+
+	# output the tuple
+	return (round(TAXES, 2), round(income - TAXES, 2))
+
+
+
 # configurarion
 
 
