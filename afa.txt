@@ -1,0 +1,33 @@
+# The value for stuff, which already was paid (no tax reduction through these anymore)
+# ... or retour stuff, which I paid, but got my money back
+
+paid = 0
+retour = 0
+
+
+
+# The default value if no entry exists in this table
+
+default = 3
+
+
+
+# Values for film and broadcasting, found on:
+# http://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Weitere_Steuerthemen/Betriebspruefung/AfA-Tabellen/1991-07-28-afa-8.pdf?__blob=publicationFile&v=3
+
+mic = 5
+mic-wireless = 3
+
+
+
+# Values for computer and office technique, found on:
+# http://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Weitere_Steuerthemen/Betriebspruefung/AfA-Tabellen/2000-12-15-afa-103.pdf?__blob=publicationFile&v=3
+
+computer = 3
+
+
+
+# Values for software, found on:
+# https://www.haufe.de/unternehmensfuehrung/profirma-professional/abschreibungsregeln-fuer-software_idesk_PI11444_HI2984662.html
+
+software = 3
